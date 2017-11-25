@@ -1,8 +1,8 @@
 <template>
 	<div class="banner">
 		<div class="banner-head">
-			<span><icon name="angle-left"></icon></span>
-			<a>注册</a>
+			<span @touchstart="goIndex"><icon name="angle-left"></icon></span>
+			<router-link to="register">注册</router-link>
 		</div>
 		<div class="tip"><span>Yoho!Family账号可登录YohoBuy有货</span></div>
 	</div>
@@ -11,7 +11,12 @@
 
 <script>
 	export default{
-		name:'banner'
+		name:'banner',
+		methods:{
+			goIndex(){
+				this.$router.push("/index")
+			}
+		}
 	}
 </script>
 
@@ -32,6 +37,7 @@
 				color: #fff;
 				display: flex;
 				justify-content: center;
+				align-items: center;
 				border:1px solid #fff;
 				width:0.22rem;
 				height:0.22rem;

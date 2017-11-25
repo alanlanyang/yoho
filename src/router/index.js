@@ -6,7 +6,8 @@ import Kind from "./../containers/kind/kind"
 import Shopping from "./../containers/shopping/shopping"
 import Car from "./../containers/car/car"
 import Mine from "./../containers/mine/mine"
-
+import Register from '@/components/mine/register'
+import Login from '@/components/mine/login'
 Vue.use(Router)
 
 export default new Router({
@@ -38,7 +39,17 @@ export default new Router({
     {
       path: '/mine',
       name: 'mine',
-      component: Mine
+      component: Mine, 
+    },
+    {
+    	path: '/register',
+    	name: 'register',
+    	component: Register
+    },
+    {
+    	path: '/login',
+    	name: 'login',
+    	component: Login
     }
   ]
 })

@@ -13,7 +13,7 @@
 					<input type="password" placeholder="请输入验证码" v-model="password"/>
 					<button>获取验证码</button>
 				</label>
-				<button class="loginBtn" @click="login({username,password})">登录</button>
+				<button class="loginBtn" @click="login({username,password,cb})">登录</button>
 			</form>
 		</div>
 	</div>
@@ -32,7 +32,10 @@
 		},
 		components:{mineBanner},
 		methods:{
-			...mapActions(['login'])
+			...mapActions(['login']),
+			cb(){	//登录成功的回调
+				this.$router.push("/mine")
+			}
 		}
 	}
 </script>

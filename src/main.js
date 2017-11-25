@@ -6,6 +6,7 @@ import router from './router'
 Vue.config.productionTip = false
 //使用mint-ui
 import mint from 'mint-ui'
+import 'mint-ui/lib/style.css'
 Vue.use(mint)
 //使用store
 import store from './vuex/store'
