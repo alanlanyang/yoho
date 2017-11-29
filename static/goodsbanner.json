@@ -1,0 +1,37 @@
+[
+	{
+		"id":1,
+		"img":"/static/imgs/ibs1.jpg",
+		"price":128
+	},
+	{
+		"id":2,
+		"img":"/static/imgs/good1.jpg",
+		"price":784
+	},
+	{
+		"id":3,
+		"img":"/static/imgs/good2.jpg",
+		"price":2534
+	},
+	{
+		"id":4,
+		"img":"/static/imgs/good3.jpg",
+		"price":237
+	},
+	{
+		"id":5,
+		"img":"/static/imgs/good4.jpg",
+		"price":542
+	},
+	{
+		"id":6,
+		"img":"/static/imgs/good5.jpg",
+		"price":128
+	},
+	{
+		"id":1,
+		"img":"/static/imgs/good6.jpg",
+		"price":128
+	}
+]

@@ -4,7 +4,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-<<<<<<< HEAD
+  username:"",
+	isLogin:false
+},
 	car:{
 		username:'a',
 		goods:localStorage.goods?JSON.parse(localStorage.goods):[]
@@ -55,29 +57,20 @@ const mutations2 = {
 				}
 			}
 		}
-
-		localStorage.goods=JSON.stringify(goods)
-	}
-}
-const mutations = Object.assign({},mutations1,mutations2)
-const store = new Vuex.Store({
-	state,getters,mutations
-=======
-	username:"",
-	isLogin:false
-}
-
-const mutations = {
+const mutations3 = {
 	changeInfo(state,params){
 		state.username = params 
 		state.isLogin = true
 		localStorage.user = params
 	}
 }
+		localStorage.goods=JSON.stringify(goods)
+	}
+}
+const mutations = Object.assign({},mutations1,mutations2,mutations3)
 import actions from './actions'
 const store = new Vuex.Store({
-	state,actions,mutations
->>>>>>> yang
+	state,actionsgetters,mutations
 })
 
 export default store
